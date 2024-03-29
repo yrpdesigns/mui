@@ -21,7 +21,32 @@ import { autoPlay } from "react-swipeable-views-utils";
 import { useState } from "react";
 import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 import Head from "next/head";
-import { addProductJsonLd } from "./layout";
+
+function addProductJsonLd() {
+  return {
+    __html: `{
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hyderabad",
+        "postalCode": "",
+        "streetAddress": "Hyderabad"
+      },
+      "email": "reddeppa(at)yrpdesigns.in",
+      
+      "alumni": [
+        {
+          "@type": "Person",
+          "name": "Reddeppa"
+        },
+      ],
+      "name": "yrpdesigns",
+      "telephone": "+91 8555040965"
+    }
+`,
+  };
+}
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
