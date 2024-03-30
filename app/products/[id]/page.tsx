@@ -1,7 +1,6 @@
 const getProduct = async (id: number) => {
   const res = await fetch(`https://fakestoreapi.com/products/${id}`);
   const data = await res.json();
-  console.log("data", data);
   return data;
 };
 
@@ -14,6 +13,10 @@ export default async function Page({ params }: any) {
     name: product.title,
     image: product.image,
     description: product.description,
+    aggregateRating: {
+      ratingValue: product.rating.rate,
+      reviewCount: product.rating.count,
+    },
   };
 
   return (
