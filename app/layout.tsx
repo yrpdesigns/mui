@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     title: "Home | YRP Designs",
     description: "Constuction website of yrp designs.",
   },
+  verification: {
+    google: "x_HQhGKbrIIOO8frAMRcLc7DXzDDub7YDCr1KZegQuc",
+  },
 };
 
 export default function RootLayout({

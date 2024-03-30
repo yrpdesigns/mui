@@ -107,7 +107,7 @@ export default function Home() {
         <Grid item xs={12} sm={6}>
           <Card sx={{ boxShadow: "none", borderRadius: 0 }}>
             <CardMedia
-              sx={{ height: 140 }}
+              sx={{ height: 145 }}
               image="https://images.unsplash.com/photo-1618220048045-10a6dbdf83e0?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
           </Card>
@@ -147,7 +147,7 @@ export default function Home() {
           <Grid item xs={12} sm={4}>
             <Card sx={{ boxShadow: "none", borderRadius: 0 }}>
               <CardMedia
-                sx={{ height: 145 }}
+                sx={{ height: 140 }}
                 image="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=1997&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 title="green iguana"
               />
@@ -174,7 +174,7 @@ export default function Home() {
             </Card>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Card sx={{ boxShadow: "none", borderRadius: 0 }}>
+            <Card sx={{ boxShadow: "none", borderRadius: 0, height: "320px" }}>
               <CardMedia
                 sx={{ height: 140 }}
                 image="https://plus.unsplash.com/premium_photo-1681691912442-68c4179c530c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
