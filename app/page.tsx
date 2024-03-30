@@ -13,7 +13,6 @@ import {
   CardMedia,
   useTheme,
   MobileStepper,
-  Paper,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import SwipeableViews from "react-swipeable-views";
@@ -39,7 +38,7 @@ function addProductJsonLd() {
         {
           "@type": "Person",
           "name": "Reddeppa"
-        },
+        }
       ],
       "name": "yrpdesigns",
       "telephone": "+91 8555040965"
@@ -149,14 +148,19 @@ export default function Home() {
           </Grid>
         </Grid>
         <Box>
-          <Typography variant="h5" component="div" textAlign="center">
+          <Typography
+            variant="h5"
+            component="div"
+            textAlign="center"
+            sx={{ padding: ".75rem" }}
+          >
             ABOUT YRP DESIGNS
           </Typography>
           <Grid container>
             <Grid item xs={12} sm={4}>
               <Card sx={{ boxShadow: "none", borderRadius: 0 }}>
                 <CardMedia
-                  sx={{ height: 140 }}
+                  sx={{ height: 145 }}
                   image="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=1997&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   title="green iguana"
                 />
@@ -250,7 +254,12 @@ export default function Home() {
             alignItems: "center",
           }}
         >
-          <Typography variant="h5" component="div" textAlign="center">
+          <Typography
+            variant="h5"
+            component="div"
+            textAlign="center"
+            sx={{ padding: ".75rem" }}
+          >
             DESIGNS THAT DEFINE: OUR DESIGN WORKS
           </Typography>
           <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
