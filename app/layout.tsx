@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import "./globals.css";
+import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,6 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="x_HQhGKbrIIOO8frAMRcLc7DXzDDub7YDCr1KZegQuc"
+        />
+      </Head>
       <body className={inter.className}>
         <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
       </body>
